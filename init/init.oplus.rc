@@ -135,3 +135,6 @@ service oplus_sensor_fb /odm/bin/oplus_sensor_fb
     group system
     class late_start
     oneshot
+
+    # Enable suspend to RAM
+    write /sys/power/mem_sleep "deep"
