@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_spartan.mk
+    $(LOCAL_DIR)/evolution_spartan.mk
 
 COMMON_LUNCH_CHOICES := \
-    derp_spartan-user \
-    derp_spartan-userdebug \
-    derp_spartan-eng
+    evolution_spartan-user \
+    evolution_spartan-userdebug \
+    evolution_spartan-eng
