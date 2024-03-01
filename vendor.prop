@@ -132,6 +132,13 @@ ro.crypto.dm_default_key.options_format.version=2
 ro.crypto.volume.filenames_mode=aes-256-cts
 ro.crypto.volume.metadata.method=dm-default-key
 
+# Dex2oat
+dalvik.vm.dex2oat64.enabled=true
+dalvik.vm.image-dex2oat-filter=speed
+dalvik.vm.image-dex2oat-threads=8
+dalvik.vm.dex2oat-filter=speed
+dalvik.vm.dex2oat-threads=8
+
 # Display
 vendor.display.disable_hw_recovery_dump=1
 vendor.display.disable_offline_rotator=1
@@ -168,6 +175,9 @@ persist.vendor.fp.template_updateflag=V1
 
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
+
+# FS-verity
+ro.apk_verity.mode=2
 
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
@@ -211,9 +221,6 @@ ro.netflix.bsp_rev=Q8250-19134-1
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
-
-# Qualcomm System Daemon
-persist.vendor.qcomsysd.enabled=1
 
 # Radio
 persist.vendor.radio.apm_sim_not_pwdn=1

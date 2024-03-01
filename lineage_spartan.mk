@@ -12,21 +12,40 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/realme/spartan/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := evolution_spartan
+PRODUCT_NAME := lineage_spartan
 PRODUCT_DEVICE := spartan
 PRODUCT_MANUFACTURER := realme
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := RMX3371
 
-# Evolution
+# lineage
+# WITH_GAPPS := true
 TARGET_BUILD_APERTURE_CAMERA := false
 TARGET_INCLUDE_PIXEL_CHARGER := true
 TARGET_SUPPORTS_TOUCHGESTURES := true
 
+# Gapps
+WITH_GMS := true
+
+# Matrixx Maintainer Info
+MATRIXX_MAINTAINER := Nazim
+MATRIXX_CHIPSET := SD®870
+MATRIXX_BATTERY := 5000mAh
+MATRIXX_DISPLAY := 2400x1080
+
+# Device has UDFPS:
+TARGET_HAS_UDFPS := true
+
 # Enable extra UDFPS animations
 EXTRA_UDFPS_ANIMATIONS := true
+
+# Nuke AudioFX
+TARGET_EXCLUDES_AUDIOFX := true
+
+# Nuke Auxio
+TARGET_EXCLUDES_AUXIO := true
 
 PRODUCT_SYSTEM_NAME := RMX3371
 PRODUCT_SYSTEM_DEVICE := RE54E4L1

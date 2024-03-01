@@ -79,6 +79,7 @@
           <item>com.oplus.camera</item>
           <item>com.oppo.camera</item>
           <item>org.derpfest.flash</item>
+          <item>com.snap.camera</item>
      </string-array>
 
     <!-- If true, the display will be shifted around in ambient mode. -->
